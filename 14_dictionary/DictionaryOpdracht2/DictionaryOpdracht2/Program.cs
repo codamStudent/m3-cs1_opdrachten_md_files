@@ -23,13 +23,14 @@ namespace DictionaryOpdracht2
 
 
             //voeg de bovenstaande monsters toe
-			???
+			monsters.Add(pickelChu.Name, pickelChu);
+            monsters.Add(boosDraakje.Name, boosDraakje);
 
 
 
 
             //kies een monster uit de dictionary
-            EvoMonster ikKiesJouw = ???;
+            EvoMonster ikKiesJouw = monsters["pickleChu"];
 
             Console.WriteLine(ikKiesJouw.Name + " wants to evolve may it? (y/n)");
             if (Console.ReadLine() == "y")

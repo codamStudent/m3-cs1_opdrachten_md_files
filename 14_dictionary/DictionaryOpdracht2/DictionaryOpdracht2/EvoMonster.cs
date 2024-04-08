@@ -11,8 +11,8 @@ namespace DictionaryOpdracht2
         internal EvoMonster Evolve(Dictionary<string, EvoMonster> monsters)
         {
             //als deze crashed wat ben je vergeten? wat moet er in monsters zitten?
-            EvoMonster next = ???;
-            return next;
+            //EvoMonster next = ];
+            return monsters[this.Name];
         }
     }
 }

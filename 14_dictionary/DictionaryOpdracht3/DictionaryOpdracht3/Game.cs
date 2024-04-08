@@ -11,29 +11,47 @@ namespace DictionaryOpdracht3
         {
             MonsterMaker orcMaker = new MonsterMaker() { Name = "orc" };
             MonsterMaker slimeMaker = new MonsterMaker() { Name = "slime" };
+            MonsterMaker aaaaaMaker = new MonsterMaker() { Name = "aaaaa" };
+            MonsterMaker bbbbbMaker = new MonsterMaker() { Name = "bbbbb" };
 
-            //voeg de orc en slime toe aan de dictionary
+			//voeg de orc en slime toe aan de dictionary
 
-            makers.Add(orcMaker.Name, orcMaker);
-            makers.Add(???,???);
+			makers.Add(orcMaker.Name, orcMaker);
+            makers.Add(slimeMaker.Name, slimeMaker);
 
             //maak nog 2 andere monstermakers aan
-            ????
+            makers.Add(aaaaaMaker.Name, aaaaaMaker);
+            makers.Add(bbbbbMaker.Name, bbbbbMaker);
 
             MakeRooms();
         }
 
         private void MakeRooms()
         {
-            rooms[0] = new Room()
-            {
-                allowedMonsters = new string[] { "orc" },
-                monsters = new Monster[2]
-            };
+			rooms[0] = new Room()
+			{
+				allowedMonsters = new string[] { "orc", "slime", "aaaaa", "bbbbb" },
+				monsters = new Monster[2]
+			};
+			rooms[1] = new Room()
+			{
+				allowedMonsters = new string[] { "orc", "slime", "aaaaa", "bbbbb" },
+				monsters = new Monster[2]
+			};
+			rooms[2] = new Room()
+			{
+				allowedMonsters = new string[] { "orc", "slime", "aaaaa", "bbbbb" },
+				monsters = new Monster[2]
+			};
+			rooms[3] = new Room()
+			{
+				allowedMonsters = new string[] { "orc", "slime", "aaaaa", "bbbbb" },
+				monsters = new Monster[2]
+			};
 
 
-            //maak nog 3 andere rooms aan. in de array voor index 1,2 & 3
-            ???
+			//maak nog 3 andere rooms aan. in de array voor index 1,2 & 3
+			
 
         }
 
